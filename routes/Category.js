@@ -5,7 +5,8 @@ var item = require("../controllers/itemController");
 /* GET users listing. */
 router.get("/", async (req, res, next) => {
   var result = await category.getAll();
-  res.send(result);
+  res.render("index",{ title:"grocories",
+  category:result});
 });
 
 router.get("/cat/:id", async (req, res, next) => {
@@ -34,5 +35,16 @@ router.get("/createItem",async function (req, res, next) {
   res.render("create",{
        category:result
   });
+});
+router.get("/displayItem",async function (req, res, next) {
+  var result = await item.getAll();
+  console.log(result)
+  res.render("diaplay",{item:result});
+});
+router.get("/category/:id",async function (req, res, next) {
+  console.log("dom")
+  var result = await category.getById( req.params.id);
+  console.log(result)
+  res.render("diaplay",{item:result});
 });
 module.exports = router;

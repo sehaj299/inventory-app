@@ -6,7 +6,9 @@ const itemSchema = new Schema({
   description: { type: String, required: true, maxlength: 250 },
   category: { type: Schema.Types.ObjectId, ref: "Category", required: true },
   price: { type: Number, required: true, min: 0, max: 100000 },
-  stockQuantity:{type:Number,required:true}
+  stockQuantity:{type:Number,required:true},
+  src:{type:String}
+
 });
 
 // Virtual for weapon's URL

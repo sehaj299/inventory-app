@@ -85,7 +85,7 @@ function createCategories(cb) {
       function (callback) {
         categoryCreate("Produce", "includes fruits,vegetables and onions", callback);
       },
-      function (callback) {
+      function (callback) { 
         categoryCreate(
           "Tinned & Dried Produce",
           "includes nuts,pulses and soups.",
@@ -109,6 +109,7 @@ function createitems(cb) {
           categories[0],
           60,
           40,
+          "https://th.bing.com/th/id/OIP.d_trzEHrPXB89DnbB13NEgHaJ4?pid=ImgDet&rs=1",
           callback
         );
       },
@@ -119,6 +120,7 @@ function createitems(cb) {
           categories[0],
           45,
           100,
+          "https://th.bing.com/th/id/OIP.OBuouQtkb7ZDKn8iDTMOZAHaE8?pid=ImgDet&rs=1",
           callback
         );
       },
@@ -129,6 +131,7 @@ function createitems(cb) {
           categories[0],
           105,
           400,
+          "https://th.bing.com/th/id/OIP.VbD2xroruCZE1S9C3EGgEQHaD8?pid=ImgDet&rs=1",
           callback
         );
       },
@@ -139,6 +142,7 @@ function createitems(cb) {
           categories[1],
           30,
           800,
+          "https://th.bing.com/th/id/OIP.ziaAvwaZb0hNqYC-9qfcqQHaE8?pid=ImgDet&rs=1",
           callback
         );
       },
@@ -149,6 +153,7 @@ function createitems(cb) {
           categories[1],
           66,
           309,
+          "https://th.bing.com/th/id/OIP.gEWn-qwae7hJ1SQarx80KwHaFd?w=264&h=194&c=7&r=0&o=5&pid=1.7",
           callback  
         );
       },
@@ -159,6 +164,7 @@ function createitems(cb) {
           categories[1],
           45,
           600,
+          "https://th.bing.com/th/id/OIP.owwtBQuiWCM0nsj2pnCG2gHaD8?w=289&h=180&c=7&r=0&o=5&pid=1.7",
           callback
         );
       },
@@ -169,6 +175,7 @@ function createitems(cb) {
           categories[1],
           65,
           600,
+          "https://th.bing.com/th/id/R.ec699049ef6cd9f4b5dd0be134b03a02?rik=gtYYsLkseiK5vw&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1587049352851-8d4e89133924%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8M3x8amFyJTIwb2YlMjBob25leXx8MHx8fHwxNjIwNjgxMjAx%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=Wee%2bO4QbPHkOPvGc6lFCXzB29zfF0Swcubn86dUdmYg%3d&risl=&pid=ImgRaw&r=0",
           callback
         );
       },
@@ -180,6 +187,7 @@ function createitems(cb) {
           categories[2],
           156,
           300,
+          "https://www.bing.com/th?id=OIP.gVbLGaGKTwUnv1i99J9gXAHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -190,6 +198,7 @@ function createitems(cb) {
           categories[2],
           54,
           300,
+          "https://www.bing.com/th?id=OIP.EXM2fxQWTXVPhXA20dBvjgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -200,6 +209,7 @@ function createitems(cb) {
           categories[3],
           29,
           50,
+          "https://www.bing.com/th?id=OIP.SFpjSZ6di6kj6PtpBxK1OwHaJt&w=218&h=286&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -210,6 +220,7 @@ function createitems(cb) {
           categories[3],
           6,
           500,
+          "https://www.bing.com/th?id=OIP.jmbFdkdECpTSMBBUFLmQnwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -220,6 +231,7 @@ function createitems(cb) {
           categories[4],
           75,
           70,
+          "https://www.bing.com/th?id=OIP.nlu81n6rinXkwCxmE3ZsjAHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -230,6 +242,7 @@ function createitems(cb) {
           categories[4],
           75,
           70,
+          "https://www.bing.com/th?id=OIP.t0XmsK9aekofoY9ZlBsF0gHaFM&w=298&h=209&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -240,6 +253,7 @@ function createitems(cb) {
           categories[5],
           50,
           600,
+          "https://www.bing.com/th?id=OIP.8lDYgtWlKesSerz8BCq_XwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -250,6 +264,7 @@ function createitems(cb) {
           categories[5],
           30,
           600,
+          "https://www.bing.com/th?id=OIP.GQWl-ecvybc7kuU0-OQYTgHaNI&w=187&h=332&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },
@@ -260,6 +275,7 @@ function createitems(cb) {
           categories[5],
           50,
           600,
+          "https://www.bing.com/th?id=OIP.CiDgM821jhSgQ7cFjVpeBQHaFj&w=150&h=106&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
           callback
         );
       },

@@ -13,7 +13,7 @@ var app = express();
 // database connectivity
 
 // Set up default mongoose connection
-const mongoDB = "mongodb+srv://sehaj:Run6692323@cluster0.nhtitzt.mongodb.net/?retryWrites=true&w=majority";
+const mongoDB = "mongodb+srv://sehaj:%40Arvinder0@cluster0.dfmjwom.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(()=>{
   console.log("con")
 })
