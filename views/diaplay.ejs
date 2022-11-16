@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
- 
+    <%- include('header') -%>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <% for(var i = 0; i < item.length; i++) {%>
-        <li><%= item[i].name %></li> 
-        <li><img src="<%=item[i].src%>"/></li> 
+      <li class="weapon"><a href=<%= item[i].url %>><%= item[i].name %></a></li> 
+      <img src="<%=item[i].src%>"width="120" height="120"/>
       <% } %>
     
     

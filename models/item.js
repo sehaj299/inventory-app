@@ -13,7 +13,7 @@ const itemSchema = new Schema({
 
 // Virtual for weapon's URL
 itemSchema.virtual("url").get(function () {
-  return "/inventory/item/" + this._id;
+  return "/Category/item/" + this._id;
 });
 
 // Export model

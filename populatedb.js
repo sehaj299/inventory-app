@@ -40,6 +40,7 @@ function itemCreate(
   category,
   price,
   stockQuantity,
+  src,
   cb
 ) {
   itemDetail = {
@@ -47,7 +48,8 @@ function itemCreate(
     description: description,
     category: category,
     price: price,
-   stockQuantity:stockQuantity
+   stockQuantity:stockQuantity,
+   src:src
   };
 
   var item = new Item(itemDetail);

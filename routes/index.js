@@ -1,11 +1,11 @@
 var express = require('express');
+const category = require('../models/category');
 var router = express.Router();
 var item=require('../models/item')
-var category = require("../controllers/categoryController");
+
 
 /* GET home page. */
-router.get('/', async function(req, res, next) {
-  var result = await category.getAll();
+router.get('/',  function(req, res, next) {
   res.redirect("/Category"
 )
  

@@ -127,22 +127,19 @@
     <form action="" method="post">
       <div class="title">
         <i class="fas fa-pencil-alt"></i> 
-        <h2>Add new Product</h2>
+        <h2>Edit Product</h2>
       </div>
       <div class="info">
-        <input class="fname" type="text" name="name" placeholder="Full name">
-        <input type="text" name="description" placeholder="DESCRIPTION">
+        <input class="fname" type="text" name="name" placeholder="Full name" value="<%- item.name %>">
+        <input type="text" name="description" placeholder="DESCRIPTION"value="<%- item.description %>">
        
-        <select name="category" id="category">
-          
-            <% for(var i = 0; i < category.length; i++) {%>
-              
-                <option selected <%= category[i].name %>><%= category[i].name %></option>
-              <% } %>
+        <select name="category" >
+          <option selected><%- item.category.name %></option>
+           
         
         </select>
-        <input type="text" name="price" placeholder="price">
-        <input type="text" name="stockQuantity" placeholder="stockQuantity">
+        <input type="text" name="price" placeholder="price" value="<%- item.price %>">
+        <input type="text" name="stockQuantity" placeholder="stockQuantity" value="<%- item.stockQuantity %>">
         <input type="file" name="image" />
       </div>
       
