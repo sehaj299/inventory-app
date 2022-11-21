@@ -11,7 +11,7 @@ const itemSchema = new Schema({
 
 });
 
-// Virtual for weapon's URL
+// Virtual for item URL
 itemSchema.virtual("url").get(function () {
   return "/Category/item/" + this._id;
 });

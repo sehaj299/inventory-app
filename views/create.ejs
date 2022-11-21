@@ -133,17 +133,17 @@
         <input class="fname" type="text" name="name" placeholder="Full name">
         <input type="text" name="description" placeholder="DESCRIPTION">
        
-        <select name="category" id="category">
+        <select name="category" >
           
             <% for(var i = 0; i < category.length; i++) {%>
               
-                <option selected <%= category[i].name %>><%= category[i].name %></option>
+                <option value="<%- category[i]._id %>" <%= category[i].name %>><%= category[i].name %></option>
               <% } %>
         
         </select>
         <input type="text" name="price" placeholder="price">
         <input type="text" name="stockQuantity" placeholder="stockQuantity">
-        <input type="file" name="image" />
+        <input type="url" name="url" placeholder="Enter image url" />
       </div>
       
       <button type="submit" >Submit</button>

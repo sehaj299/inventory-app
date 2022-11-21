@@ -9,20 +9,20 @@ require('dotenv').config();
 var multer = require("multer");
 
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
+
 
 var categoryRouter = require("./routes/Category");
 const { Console } = require("console");
 const { dirname } = require("path");
 var app = express();
-// database connectivity
 
-// Set up default mongoose connection
+
+
 // Set up default mongoose connection
 console.log(process.env.MONGO_KEY)
 const mongoDB = process.env.MONGO_KEY;
 
-mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true });// database connectivity
 
 const db = mongoose.connection;
 
@@ -42,7 +42,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
+
 
 app.use("/Category", categoryRouter);
 
